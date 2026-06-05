@@ -80,7 +80,7 @@ def load_model():
     except ImportError:
         print("⚠️  TensorFlow not installed — running in demo mode.")
 
-
+load_model()
 def preprocess(image: Image.Image):
     img = image.convert("RGB").resize((224, 224))
     arr = np.array(img, dtype=np.float32)
